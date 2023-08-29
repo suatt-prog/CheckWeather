@@ -8,7 +8,7 @@ def main(request):
     return render(request,"index.html")
 
 def req(request):
-    api_key = "163112a562bd398050e1530fa02ee840"
+    api_key = ""
     url = "https://api.openweathermap.org/data/2.5/weather"
     city = request.GET["city"]
     responde = requests.get(url+"?q="+city+"&appid="+api_key).json()
